@@ -1,0 +1,155 @@
+<!-- res/layout/activity_leave_request.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    >
+
+    <TextView
+        android:id="@+id/textBanner"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:background="@color/grey_background"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="Employee"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:layout_gravity="top"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+
+        <TextView
+            android:id="@+id/textLeaveRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Leave Request"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/iconBell"
+            android:layout_width="27dp"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Bell Icon"
+            android:src="@drawable/bell" />
+    </RelativeLayout>
+
+    <!-- Button to Return Home -->
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:text="Return to Homepage"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="@drawable/border"
+        android:layout_gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="..."
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Date Of Birth"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/editTextDateOfBirth"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="..."
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+
+    <TextView
+        android:id="@+id/Salery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Salery"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/editSalery"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="..."
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textNationalInsuranceNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="National Insurance Number"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editNI"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="..."
+        android:inputType="textMultiLine"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/buttonSaveDetails"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Save Details"
+        android:background="@drawable/border"
+        android:layout_gravity="center"/>
+</LinearLayout>

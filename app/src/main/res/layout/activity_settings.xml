@@ -1,0 +1,162 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <!-- Banner with centered text -->
+    <TextView
+        android:id="@+id/textBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_background"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="Employee"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/iconBell"
+            android:layout_width="27dp"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Bell Icon"
+            android:src="@drawable/bell" />
+    </RelativeLayout>
+
+    <!-- Button to Return Home -->
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:text="Return To Homepage"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="@drawable/border"
+        android:layout_gravity="left"
+        tools:ignore="HardcodedText" />
+
+    <!-- Container for the new buttons vertically stacked -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Notifications Button with Toggle -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnOption1"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+    android:background="@drawable/border"
+    android:text="Notifications"
+    android:textColor="#000000"
+    android:textSize="16sp" />
+
+    <Switch
+        android:id="@+id/switchNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <!-- Dark Mode Button with Toggle -->
+<LinearLayout
+android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    >
+
+<Button
+android:id="@+id/btnOption2"
+android:layout_width="200dp"
+android:layout_height="80dp"
+android:layout_marginEnd="16dp"
+    android:background="@drawable/border"
+    android:text="Dark Mode"
+    android:textColor="#000000"
+    android:textSize="16sp" />
+
+    <Switch
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+<LinearLayout
+android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+<Button
+android:id="@+id/btnOption3"
+android:layout_width="200dp"
+android:layout_height="80dp"
+android:layout_marginEnd="16dp"
+    android:background="@drawable/border"
+    android:text="Other Settings"
+    android:textColor="#000000"
+    android:textSize="16sp" />
+
+<Switch
+android:id="@+id/switchOtherSettings"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Remaining buttons (Save and Discard Settings) -->
+        <Button
+            android:id="@+id/btnOption4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border"
+            android:text="Save Settings"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+<Button
+android:id="@+id/btnOption5"
+android:layout_width="200dp"
+android:layout_height="40dp"
+android:background="@drawable/border"
+android:text="Discard Settings"
+android:textColor="#000000"
+android:textSize="16sp"
+android:layout_gravity="center" />
+    </LinearLayout>
+    </LinearLayout>
